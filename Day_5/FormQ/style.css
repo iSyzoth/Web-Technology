@@ -1,0 +1,49 @@
+body{
+    background-color: rgb(47, 57, 66);
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.t1{
+    color:rgb(129, 129, 143);
+    font-family: 'Kalam', cursive;
+    font-size: 80px;
+}
+
+.box{
+    border: 0px;
+    border-bottom:1px solid rgb(129, 129, 143);
+    
+    font-size: large;
+    padding: 5px;
+    background-color:rgb(47, 57, 66);
+    
+}
+.txt{
+    padding-left: 10px;
+}
+
+.placeholder{
+    color:rgb(129, 129, 143);
+    opacity:1;
+}
+
+.grey{
+    color:rgb(129, 129, 143);
+}   
+
+input[type="text"]::-webkit-input-placeholder{
+    color:rgb(129, 129, 143);
+}
+
+input[type="password"]::-webkit-input-placeholder{
+    color:rgb(129, 129, 143);
+}
+input[type="email"]::-webkit-input-placeholder{
+    color:rgb(129, 129, 143);
+}
+
+[type="radio"]::-webkit-input-placeholder{
+    color:rgb(129, 129, 143);
+}
+    
+

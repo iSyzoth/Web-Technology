@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        input[type="text"]{
+            border:2px solid red;
+        }
+        input[type="checkbox"]:checked{
+            accent-color: green;
+        }
+        #first,.paragraph{
+            background-color:aquamarine;
+        }
+        .para.data2{
+            color:blue;
+        }
+        .para span{
+            font-size: 40px;
+        }
+        .para::first-letter{
+            font-size:50px;
+        }
+        .para::first-line{
+            color:red;
+        }
+        .para:first-child{
+            text-decoration: line-through;
+        }
+        .para:nth-child(3){
+            font-family:Georgia, 'Times New Roman', Times, serif;
+            font-size: 20px;
+        }
+    </style>
+</head>
+<body>
+    <p id="first" class="para data1">
+        A paragraph is defined as “a group of sentences or a single sentence that forms a unit” (Lunsford and Connors 116). Length and appearance do not determine whether a section in a paper is a paragraph. For instance, in some styles of writing, particularly journalistic styles, a paragraph can be just one sentence long.
+    </p>
+    <p id="second" class="para data2">
+        A paragraph is defined as “a group of sentences or a single sentence that forms a unit” (Lunsford and Connors 116).<span>Length and appearance do not determine whether a section in a paper is a paragraph.</span> For instance, in some styles of writing, particularly journalistic styles, a paragraph can be just one sentence long.
+    </p>
+    <p id="third" class="para data1">
+        A paragraph is defined as “a group of sentences or a single sentence that forms a unit” (Lunsford and Connors 116). Length and appearance do not determine whether a section in a paper is a paragraph. For instance, in some styles of writing, particularly journalistic styles, a paragraph can be just one sentence long.
+    </p>
+    <p id="four" class="paragraph">
+        A paragraph is defined as “a group of sentences or a single sentence that forms a unit” (Lunsford and Connors 116). Length and appearance do not determine whether a section in a paper is a paragraph. For instance, in some styles of writing, particularly journalistic styles, a paragraph can be just one sentence long.
+    </p>
+    <input type="checkbox">Remember me<br><br>
+    Name : <input type="text"><br><br>
+    Email : <input type="emal"><br><br>
+    Comment : <input type="text"><br><br>
+</body>
+</html>

@@ -1,0 +1,32 @@
+
+<html>
+<head>
+    <title>Flex demo</title>
+    <style> 
+
+        .main-block{
+            height:500px;
+            width:500px;
+            border: 2px solid black;
+            flex-direction: row;
+            display:flex;
+            flex-wrap: wrap;
+            justify-content:space-evenly; /* justify-conent work along with flex-direction. row or column */
+        }
+        .product{
+            border: 1px solid skyblue;
+            height: 70px;
+            width: 70px;
+        }
+
+    </style>
+</head>
+<body>
+        <div class="main-block">
+            <div class="product"> Product 1 </div>
+            <div class="product"> Product 2 </div>
+            <div class="product"> Product 3 </div>
+            <div class="product"> Product 4 </div>        
+        </div>
+</body>
+</html>

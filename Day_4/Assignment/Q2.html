@@ -1,0 +1,75 @@
+<html>
+    <head>
+        <title>Q2 using flex</title>
+    </head>
+    <style>
+        body{
+            background-color: rgb(167, 207, 97);
+            display:flex;
+            flex-direction: row;
+            flex-wrap:wrap;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .container{
+            
+           text-align: center;
+           border:1px solid;
+           border-radius: 10px;
+           background-color:rgba(118, 160, 94, 0.603);
+           padding: 50px;
+           width: 400px;   
+        }
+
+        .outer_block{
+            height:70px;  
+            align-items: center;
+            align-self: center;
+            align-content: center;
+            border:1px solid;      
+        }
+
+        .box{
+
+            border: 0px;
+            width:300px;
+            height:45px;
+            font-size: large;
+            padding: 5px;
+            border-radius: 10px;
+            border-bottom: 1px solid rgb(20, 173, 166);
+            border-left:1px solid rgb(20, 173, 166);
+        }
+
+        button{
+            color:white;
+            border: 0px;
+            background-color: rgb(92, 134, 20);
+            width:300px;
+            height:45px;
+            font-size:medium;
+            border-radius: 10px;
+            }
+        a{
+            color: rgb(92, 134, 20);
+            text-decoration: none;
+            }
+    </style>
+    <body>
+        <div class="container">
+            <div class="outer_block" >
+                <input type="text" placeholder="Username" class="box">
+            </div>
+            <div class="outer_block">
+                <input type="password" placeholder="Password" class="box"> 
+            </div>
+            <div class="outer_block">
+                <button>LOGIN</button>
+            </div>
+            <div class="outer_block">
+                <p>Not registerd?<a href="#"> Create an account</a></p>
+            </div>
+        </div>
+    </body>
+</html>

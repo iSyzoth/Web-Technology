@@ -1,0 +1,43 @@
+
+<html>
+<head>
+    <title>Flex demo</title>
+    <style> 
+
+        .main-block{
+            height:200px;
+            width:800px;
+            border: 2px solid black;
+            display:flex;
+          /*  flex-direction: row;
+            flex-direction: row-reverse; */
+            flex-wrap: wrap;
+            justify-content:space-between;
+            align-items: center;
+            gap: 10px;  
+            
+        }
+        .product{
+            border: 1px solid skyblue;
+            height: 70px;
+            width: 70px;
+        }
+
+        .product2{
+            border: 1px solid skyblue;
+            height: 70px;
+            width: 70px;
+            flex-grow: 1;
+        }
+
+    </style>
+</head>
+<body>
+        <div class="main-block">
+            <div class="product"> Product 1 </div>
+            <div class="product"> Product 2 </div>
+            <div class="product2"> Product 3 </div>
+            <div class="product"> Product 4 </div>
+        </div>
+</body>
+</html>

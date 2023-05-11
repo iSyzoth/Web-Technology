@@ -1,0 +1,35 @@
+<html>
+    <head>
+        <title> Table Rowspan </title>
+    </head>
+    <body>
+        <table border = 2 height = "200" width="200" bgcolor="green" cellspacing="10">      <!-- cellspacing is used to -->
+            <tr>
+                <td align="center"><b> Fruit</b></td>   <!-- th used to bold and center for title-->
+                <th> State </th>
+                <th> Rate </th>
+            </tr>
+            <tr align="center">
+                <td rowspan="2"> Apple </td>
+                <td> MH </td>
+                <td> 30 </td>
+            </tr>
+            <tr align="center">
+                <td> BP </td>
+                <td> 40</td>
+            </tr>
+            <tr align="center">
+                <td rowspan="2"> Banana </td>
+                <td> PT </td>
+                <td rowspan = "2"> 60 </td>
+            </tr>
+            <tr align="center">
+                <td> HY </td>
+            </tr>
+            <tr align="center" bgcolor="red">
+                <td colspan = "2"> Total </td>
+                <td > 130 </td>
+            </tr>
+        </table>
+    </body>
+</html>

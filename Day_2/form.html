@@ -1,0 +1,52 @@
+<html>
+    <head>
+        <title>Forms</title>
+    </head>
+    <body>
+        <form>
+            <!-- do not close input tag -->
+            Enter name : <input type = "text" placeholder="Enter your name">
+            <br>
+            Enter email : <input type = "email" placeholder="Enter email here">
+            <br>
+            Enter DOB : <input type="date">
+            <br>
+            Enter Age : <input type ="number">
+            <br>
+            upload image : <input type ="file">
+            <br>
+            Enter width : <input type ="range">
+            <br>
+            Enter password : <input type ="password">
+            <br>
+            Gender: <input type = "radio" name="gender">Male
+                    <input type="radio" name="gender">Female
+                    <input type="radio" name="gender">Others
+            <br>
+            Language:   <input type="checkbox" name="lang">C
+                        <input type="checkbox" name="lang">Python
+                        <input type="checkbox" name="lang">Nodejs
+            <br>
+            Select State : <select size="1">
+                <option selected> MH </option>
+                <option> MP </option>
+                <option> HP </option>
+                <option> Tamil Nadu </option>
+                <option> Bihar </option>
+            </select>
+            <br>
+            <!--If the button tag is pressed, all input tag inside this form will be collected and send it to the server-->
+            <button>Submit</button>
+            <!-- Or -->
+            <input type="submit" value="Save">
+
+            <!-- Will not affect data, do not submit data to the server-->
+            <button type="button">Forgot</button> 
+
+            <!-- reset button -->
+            <input type="reset">
+
+
+        </form>
+    </body>
+</html>

@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+    <title>Question 01</title>
+
+    <style>
+        .top{
+            border-bottom: 1px solid grey;
+        }
+
+        .card-body{
+            border-top: 1px solid grey;
+        }        
+    </style>
+</head>
+<body>
+    <!--Navbar-->
+    <nav class="navbar navbar-expand-lg" data-bs-theme="white">
+        <div class="container top">
+            <div class="navbar-brand">
+                <a class="navbar-brand fs-3" href="#"><img src="online-library.png" alt="Logo" width="80" height="80">Pricing Example</a>
+            </div>                
+            <div class="navbar-nav">
+                <a href="#" class="nav-link active lh-sm text-center" style="max-width: 6rem;">
+                    <span class="small-text">Features</span>
+                </a>
+                <a href="#" class="nav-link lh-sm text-center" style="max-width: 6rem;">
+                    <span class="small-text">Enterpries</span>
+                </a>
+                <a href="#" class="nav-link lh-sm text-center" style="max-width: 6rem;">
+                    <span class="small-text">Support</span>
+                </a>
+                <a href="#" class="nav-link lh-sm text-center" style="max-width: 6rem;">
+                    <span class="small-text">Pricing</span>
+                </a>
+            </div>  
+        </div>
+    </nav>
+    
+
+    
+    <div class="container body">
+        <!--Pricing Para-->
+
+        <div class="pt-4 text-center">
+            <span class="fs-1"> Pricing </span>
+            <br>
+            <span class="fs-5"> Quickly build an effective pricing table for your potential customers with this Bootstrap example. It’s built with default Bootstrap components and utilities with little customization. </span>
+        </div>
+
+        <!--Pricing details-->
+
+        <div class="card_whole row justify-content-center gap-5 p-5">
+            <div class="card text-center col-md-3 px-0">                
+                <span class="fs-2 p-3 bg-body-secondary"> Free </span>
+                <div class="card-body">
+                    <span class="fs-2"> <b>$0</b>/mo </span> <br>
+                    <span class="fs-5"> 10 users included 2 GB of storage Email support Help center access</span>
+                    <div class="pt-3 fs-3">
+                        <button type="button" class="btn btn-white text-primary border-primary btn-lg btn-block w-100">Sign up for free</button>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="card text-center col-md-3 px-0 ">
+                <span class="fs-2 p3 p-3 bg-body-secondary"> Pro </span>
+                <div class="card-body">
+                    <span class="fs-2"> <b>$15</b>/mo </span> <br>
+                    <span class="fs-5"> 20 users included 1 GB of storage Email support Help center access</span>
+                    <div class="pt-3 fs-3">
+                        <button type="button" class="btn btn-primary btn-lg btn-block w-100">Get started</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card text-center col-md-3 bg-primary px-0"> <!-- px-0 is used to get rid of thick left and right borders -->
+                <span class="fs-2 p-3 text-white"> Enterprise </span>
+                <div class="card-body bg-white rounded-bottom-1">
+                    <span class="fs-2"> <b>$29</b>/mo </span> <br>
+                    <span class="fs-5"> 30 users included 15 GB of storage Email support Help center access</span>
+                    <div class="pt-3 fs-3">
+                        <button type="button" class="btn btn-primary btn-lg btn-block w-100">Contanct Us</button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <!--Compare plans-->
+
+        <div class="contianer-3" >
+            <div class="table_head text-center pb-3">
+                <span class="fs-2"> Compare plans</span>
+            </div>
+
+                <!--table-->
+                
+                <table class="table table-hover">
+                    <thead>
+                        <tr class="bg-body-secondary">
+                            <th scope="col"></th>
+                            <th scope="col">Free</th>
+                            <th scope="col">Pro</th>
+                            <th scope="col">Enterprise</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope ="row">Public</th>
+                            <td >&#10003;</td>
+                            <td>&#10003;</td>
+                            <td>&#10003;</td>
+                        </tr>
+                        <tr>
+                            <th scope ="row">Private</th>
+                            <td >&#10003;</td>
+                            <td></td>
+                            <td>&#10003;</td>
+                        </tr>
+                        <tr>
+                            <th scope ="row">Permission</th>
+                            <td >&#10003;</td>
+                            <td>&#10003;</td>
+                            <td>&#10003;</td>
+                        </tr>
+                        <tr>
+                            <th scope ="row">Sharing</th>
+                            <td></td>
+                            <td>&#10003;</td>
+                            <td>&#10003;</td>
+                        </tr>
+                        <tr>
+                            <th scope ="row">Unlimited members</th>
+                            <td ></td>
+                            <td>&#10003;</td>
+                            <td>&#10003;</td>
+                        </tr>
+                        <tr>
+                            <th scope ="row">Extra security</th>
+                            <td></td>
+                            <td></td>
+                            <td>&#10003;</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <!--table end-->
+        </div>
+    </div>
+</body>
+</html>

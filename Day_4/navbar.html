@@ -1,0 +1,64 @@
+<html>
+    <head>
+        <title>Nav Bar</title>
+        <Style>
+            body{
+                background-color: black;
+            }
+            .nav-container{
+                border-bottom: 1px solid white;
+                display:flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+            }
+            .menu{
+                border:1px solid green;
+                text-decoration: none;
+                color:white;
+                padding:10px;
+                font-size:20px;
+                font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+            }
+            .space{
+                flex-grow:1;
+
+            }
+            .search{
+                display:flex;
+                align-items: center;
+                width: 10.5vw;
+                background-color: white;
+                color:black;
+                padding:2px;
+                border-radius: 5px;
+            }
+
+            .search{
+                padding: 4px;
+                font-size:25px;
+                border:0px;
+            }
+
+            .search-ico{
+                padding-right: 8px;
+                font-size:27px;
+            }
+        </Style>
+    </head>
+    <body>
+        <div class="nav-container">
+            <a href="#" class="menu"> Home </a>  <!-- a href tag is called anchor tag-->
+            <a href="#" class="menu"> About Us </a>
+            <a href="#" class="menu"> PG-DAC </a>
+            <a href="#" class="menu"> PG-DFBD </a>  <!-- <a href="#" class="menu space"> PG-DFBD </a> and delete line 36. It'll work also but dfbd block will become big-->
+            <div class="space menu"> <!-- used to give empty div space between DFBF and Login-->
+                <div class = "search">
+                    <input type="text" class="search-input" placeholder="Search...">
+                    <span class="serach-ico">&olarr;</span>
+                </div>
+            </div>
+            <a href="#" class="menu"> LOGIN </a>
+        </div>
+    </body>
+</html>

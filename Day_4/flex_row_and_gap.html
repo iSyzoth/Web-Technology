@@ -1,0 +1,43 @@
+
+<html>
+<head>
+    <title>Flex demo</title>
+    <style> 
+
+        .main-block{
+            height:500px;
+            width:500px;
+            border: 2px solid black;
+            flex-direction: row;
+            display:flex;
+            flex-wrap: wrap;
+            justify-content:space-evenly; /* justify-conent work along with flex-direction. row or column */
+            align-items: center ;  /* align divs in prespective of the main block */
+            align-content: center ; /* align divs in prespective to other dives. */
+            gap: 20px;          /* gives gap in between individual divs */
+        }
+        .product{
+            border: 1px solid skyblue;
+            height: 80px;
+            width: 80px;
+        }
+
+    </style>
+</head>
+<body>
+        <div class="main-block">
+            <div class="product"> Product 1 </div>
+            <div class="product"> Product 2 </div>
+            <div class="product"> Product 3 </div>
+            <div class="product"> Product 4 </div>
+            <div class="product"> Product 5 </div>
+            <div class="product"> Product 6 </div>
+            <div class="product"> Product 7 </div>
+            <div class="product"> Product 8 </div>
+            <div class="product"> Product 9 </div>
+            <div class="product"> Product 10 </div>
+            <div class="product"> Product 11 </div>
+            <div class="product"> Product 12 </div>        
+        </div>
+</body>
+</html>
