@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Effects</title>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js" integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script>
+    <style>
+        
+        .block{
+            display:flex;
+            justify-content: center;
+            align-items: center;
+            border:2px solid rgb(0, 0, 0);
+            width:200px;
+            height:200px;
+            background-color: rgb(79, 175, 203);
+            color:white;
+            font-size: xx-large;
+            border-radius: 10px;
+        }
+
+        
+    </style>
+    <script>
+        $(document).ready(function(){
+            //hide
+            $("#hide-btn").click(function(){
+                $(".block").hide(5000, "linear",function(){
+                    $(".block").css({"background-color":" rgb(255, 174, 0)"})
+                })
+            })
+
+            //show
+            $("#show-btn").click(function(){
+                $(".block").show(5000, function(){
+                    $(".block").css({"background-color":"rgb(59, 203, 177)"})
+                })
+            })
+
+            //slide up
+            $("#slideup-btn").click(function(){
+                $(".block").slideUp(6000)
+            })
+
+            //slide down
+            $("#slidedown-btn").click(function(){
+                $(".block").slideDown(6000)
+            })
+
+            //toggle
+            $("#toggle").click(function(){
+                $(".block").toggle(2000)
+            })
+
+            //SlideToggle
+            $("#slideToggle").click(function(){
+                $(".block").slideToggle(2000, function(){
+                    $(".block").css({"background":"rgb(103, 240, 167)"})
+                })
+            })
+       
+            //fadeOut
+            $("#fadeOut").click(function(){
+                $(".block").fadeOut(2000)
+            })
+
+            //fadeIn
+            $("#fadeIn").click(function(){
+                $(".block").fadeIn(2000)
+            })
+
+            //fadeToggle
+            $("#fadeToggle").click(function(){
+                $(".block").fadeToggle(2000)
+            })
+        })
+                
+
+        /*
+            Effects : 
+                show, hide, toggle
+                slideUP, slideDown, slideToggle
+                fadeIn, fadeOut, fadeToggle
+
+        */
+
+
+    </script>    
+</head>
+<body>
+    <div class="block">Hello</div> <br>
+        <div class="buttons">
+            <button id="hide-btn">Hide</button>
+            <button id="show-btn">Show</button>
+            <button id="slideup-btn">slide up</button>
+            <button id="slidedown-btn">slide down</button> 
+            <button id="toggle">toggle</button>
+            <button id="slideToggle">SlideToggle</button>
+            <button id="fadeOut">fadeOut</button>
+            <button id="fadeIn">fadeIn</button>
+            <button id="fadeToggle">fadeToggle</button>
+        </div>
+</body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js" integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script>
+    <style>
+    
+        img{
+            width:100px;
+            height:100px;
+        }
+    </style>
+    <title>Q2</title>
+</head>
+<body>
+    
+    <div class="image">
+        <img src="online-library.png">
+    </div>
+
+    <script>
+        $(".image").mouseover(function(){
+            $(".image").animate({"padding-left":"90vw"},5000)
+        })
+
+        $(".image").mouseover(function(){
+            $(".image").animate({"padding-top":"80vh"},3000)
+        })
+
+        $(".image").mouseover(function(){
+            $(".image").animate({"padding-left":"0vw"},3000)
+        })
+
+        $(".image").mouseover(function(){
+            $(".image").animate({"padding-top":"0vh"},3000)
+        })
+    </script>
+</body>
+</html>

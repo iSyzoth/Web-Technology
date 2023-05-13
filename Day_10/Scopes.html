@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Scopes</title>
+    <script>
+        // var, let, const
+        // Three types of scopes
+        // 1. Global scope (var, let, const : accessable everywhere. ex - inside or outside the function)
+        // 2. Function scope : created by function. Note : var, let and const cannot be accessed outside of the function
+        // 3. Block scope : created by {}. let and const follows block scope but var don't. ( var can be accesed inside the function)
+
+        function printData(){
+            // var a = 100
+            // let b = 200;
+            // const c = 400; // const value cannot be changed
+            // -----------------------------------
+            var x = 10
+            let y = 40
+            const z = 50
+            if(true){
+                let x=300
+                let y=400
+                const z=500
+            }
+            console.log("x :", x)
+            console.log("y :", y)
+            console.log("z :", z)
+        }
+        printData()
+        //console.log("a :", a)
+        //console.log("b :", b)
+        //console.log("c :", c)
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

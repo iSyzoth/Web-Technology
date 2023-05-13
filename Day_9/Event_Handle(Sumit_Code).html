@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Event Handling</title>
+    <style>
+        .block{
+            border: 1px solid black;
+            width: 50px;
+            height: 50px;
+
+        }
+        .big-box{
+            border: 1px solid black;            
+            padding: 50px;
+            width: 200px;
+            height: 200px;
+        }
+    </style>
+    <script>
+      function handleClick() {
+        console.log("Clicked")
+      }
+      function func2() {
+        console.log("func2 mouseover");
+        document.getElementById("block").style["background-color"] = "red";
+        document.getElementById("block").classList.add("big-box")
+      }
+      function func3() {
+        console.log("func3 mouseleave");
+        document.getElementById("block").style["background-color"] = "white";
+        document.getElementById("block").classList.remove("big-box")
+
+      }
+      function func4() {
+        console.log(" func4 mouse moved in upward direction");
+      }
+      function func5(){
+        console.log("func5 input foucsed");
+      }
+      function func6(){
+        console.log("func6 cursor out of input box");
+        var name = document.getElementById("name").value
+        if(name.length){
+                document.getElementById("err").innerHTML = "Name must of at least 5 char"
+        }else{
+            document.getElementById("err").innerHTML= ""
+        }
+    }
+    function func7(){
+        console.log("somting input ")
+    }
+    </script>
+  </head>
+  <body>
+    <div class="block" id="block" onclick="handleClick()" onmouseover="func2()" onmouseleave="func3()" onmouseup="func4()">
+      hii
+    </div>
+    <br><br>
+    <button onclick="handleClick()">Btn</button> <br><br>
+    Enter Name: <input type="text" name="" id="name" onfocus="func5()" onblur="func6()" oninput="func7()" />
+    <span id="err"></span> <br><br>
+  </body>
+</html>

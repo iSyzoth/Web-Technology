@@ -1,0 +1,61 @@
+<html>
+    <head>
+        <title>Arrays</title>
+        <script>
+            var arr = [] // empty array
+            var friends=["Atul", 234, 3.34, true];      // no limit of length, we can insert anything (string, float, boolean, function, etc...)
+            console.log(friends);
+                        //0      1    2     3  
+            
+            console.log("length of arrays", friends.length)
+        
+            //Access element
+            console.log(friends[1]);    // access the value of on the specific index
+            friends[1] = "Raj"; // modifying the value of index
+            friends[3] = false;
+            console.log(friends);
+            
+            //Array operations
+            //Insert
+            friends.push("Neha") // adding element at the end of array
+            console.log(friends);
+
+            friends.unshift("Ruchi") // Adding element at the beginning
+            console.log(friends);
+
+            // Remove
+            friends.pop(); //Remove last element of the array
+            console.log(friends);
+
+            friends.shift() //removes first element of the array
+            console.log(friends);
+
+            friends.splice(1,1);    //removing elements from specific index
+            console.log(friends);
+
+            friends.splice(1,2);
+            console.log(friends);
+
+            
+            var arr = ["Atul" , "Raj" , "Neha"];
+            console.log(arr)
+            //Array Function
+            arr.reverse();          // reverse array
+            console.log(arr);
+            console.log(arr.includes("At"));  // if array exists or not
+
+            // join function
+            console.log(arr.join());
+            console.log(arr.join("-"));
+            console.log(arr.join("/"));
+            console.log(arr.join(" - 12321 - "));
+
+
+
+
+        </script>
+    </head>
+    <body>
+        
+    </body>
+</html>

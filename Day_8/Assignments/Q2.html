@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Q2</title>
+    <script>
+        //Write a code to take string input from user and remove duplicate words in javascript
+
+        var str=prompt("Enter a string: ");
+        var words=str.split(" ");
+        var temp=[];
+
+        for(i=0; i<words.length;i++){
+            if(!temp.includes(words[i])){
+                temp.push(words[i]);
+            }
+            console.log(str);
+        }
+        var str2=temp.join(" ");
+        console.log(str2);
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

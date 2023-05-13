@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .block{
+            border :1px solid black;
+            padding :50px;
+            width:150px;
+        }
+        .big_box{
+            border :1px solid rgb(27, 22, 22);
+            color:red;
+            padding :50px;
+            width:200px;
+            height:200px;
+        }
+    </style>
+    <script>
+        function handleClick(){
+            console.log("Clicked")
+        }
+        function mouseHover(){
+            console.log("Cursor Hover")
+            document.getElementById("block").classList.add("big_box")
+            //document.getElementById("block").style["background-color"] = "red"
+        }
+        function mouseLeave(){
+            console.log("Cursor Leave")
+            //document.getElementById("block").style["background-color"] = "white"
+        }
+
+        function onFocus(){
+            console.log("Focus event")
+        }
+
+        function onBlur(){
+            console.log("Focus out / Blur")
+            var name=document.getElementById("name").value
+            if(name.length<5){
+                document.getElementById("Error").innerHTML ="Name must be of atleast 5 character"
+            } 
+            else{
+                document.getElementById("Error").innerHTML =""
+            }
+
+        }
+
+        function onInput(){
+            console.log("Input event")
+        }
+    </script>
+</head>
+<body>
+    <div class="block" onclick="handleClick()" onmouseover="mouseHover()" onmouseleave="mouseLeave()">
+        HI!
+    </div>
+    <br><br>
+    <button onclick="handleClick()" on>Button</button>
+    <br>
+    <br>
+    Enter name : <input type="text" id="name" onfocus="onFocus()" onblur="onBlur()" oninput="onInput()">
+    <span id="Error"></span>
+    <br>
+    Enter phone : <input type="text" id="phone">
+</body>
+</html>
+
+<!--
+
+    click
+    mouseover
+    mouseleave
+    mouseenter
+    dblclick
+    mouseup
+    mousedown
+    keypress
+    submit
+    blur
+    focus
+    input
+    change
+
+-->

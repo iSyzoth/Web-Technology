@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+</head>
+<script>
+    //arr=["a","y","z"] arr[0]
+    // var std=[
+    //     {name: "Siddhant", age: 12, salary:3000},   // 0 index
+    //     {name: "Anubhav", age: 13, salary:4000},    // 1 index
+    //     {name: "Rajat", age: 14, salary:5000},      // 2 index
+    // ]
+
+    //std[2]      //accessing whole {name: "Rajat", age: 14, salary:5000}
+    //console.log(std[2].name)
+    //std[2].salary=7000;
+    //console.log(std[2]["name"][1]) // Rajat : Output : a 
+                                   // 01234 : since we are accessing the 1 index of name
+
+    var std=[]
+
+    for(var i=0;i<3;i++){
+        var n=prompt("enter name")
+        var a=prompt("enter age")
+        var s=prompt("enter salary")
+        var temp={
+            name:n,
+            age:a,
+            salary:s
+        }
+        std.push(temp)
+    }
+   
+    var htmlStr="<table border=1" 
+    for(var i=0;i<std.length; i++){
+        htmlStr=htmlStr+"<tr><td>"+std[i].name+"</td><td>"+std[i].age+"</td><td>"+std[i].salary+"</td><tr>";
+    }
+    htmlStr=htmlStr+"</table>"
+    document.write(htmlStr)
+
+    
+   /*
+        <table>
+            <tr>
+                <td> Siddhant </td> <td> 12 </td> <td> 3000 </td>    
+            </tr>
+            <tr>
+                <td> Amibhav </td> <td> 13 </td> <td> 4000 </td>    
+            </tr>
+            <tr>
+                <td> Rajat </td> <td> 14 </td> <td> 5000 </td>    
+            </tr>
+            
+        </table>
+    */
+</script>
+<body>
+    
+</body>
+</html>

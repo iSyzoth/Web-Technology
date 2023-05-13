@@ -1,0 +1,23 @@
+<html>
+    <head>
+        <title> </title>
+    </head>
+    <script>
+    
+    var str=prompt("Enter a string:");
+
+    str=str.toLowerCase().replace(/[^a-z0-9]/g,'');
+
+    var rev=str.split('').reverse().join('')
+
+    if(str===rev){
+        document.write("The string is palindrome.")
+    }
+    else{
+        document.write("The string is not palindrome.")
+    }
+    </script>
+    <body>
+
+    </body>
+</html>

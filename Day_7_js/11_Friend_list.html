@@ -1,0 +1,39 @@
+<html>
+    <head>
+        <title> Friend List</title>
+        <script>
+            var arr= ["Atul", "Neha", "Somu", "Nikki"];
+            var htmlStr = "<ol>";
+            for(var i=0;i<arr.length; i++){
+                // document.write(arr[i] + "<br>");
+                // document.write("<h2>" +arr[i] + "</h2>");
+                htmlStr = htmlStr + "<li>" + arr[i] + "</li>";
+            }
+
+            htmlStr = htmlStr+"</ol>"; //<ol> <li> Atul </li> <li> Neha </li> <li> Somu </li> <li> Nikki </li>
+            document.write(htmlStr);            
+
+            /* 
+
+            var arr= ["Atul", "Neha", "Somu", "Nikki"];
+            var htmlStr = "<ol>"
+            i = 0; 
+            <ol> <li> Atul </li>  concat and it goes back to htmlStr in step htmlStr
+            
+
+
+            output : -
+            <ol>
+                <li> Atul </li>
+                <li> Neha </li>
+                <li> Somu </li>
+                <li> Nikki </li>
+            </ol>
+
+
+             
+            
+            */
+        </script>
+    </head>
+</html>

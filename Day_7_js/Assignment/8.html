@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        // Implement a calculator using if-else ladder
+        var num1 = parseFloat(prompt("Enter the 1st number : "));
+        var oper = prompt("Enter the operation (+ , - , * , / ) :");
+        var num2 = parseFloat(prompt("Enter the 2nd number : "));
+
+        let result;
+        if(oper === "+"){
+            result = num1+num2;
+        }
+        else if(oper === "-"){
+            result = num1-num2;
+        }
+        else if(oper === "*"){
+            result = num1*num2;
+        }
+        else if(oper === "/"){
+            result = num1/num2;
+        }
+        else{
+            alert("Invalid Operator");
+        }
+
+        alert(num1 + " " + oper + " " + num2 + " = " + result);
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

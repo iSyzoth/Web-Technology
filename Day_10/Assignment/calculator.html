@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Calcumator</title>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js" integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script>
+    <script>
+
+        function add(){
+            var num1 = $("#num1").val()        
+            var num2 =$("#num2").val()
+            var result = Number(num1) +Number (num2)           
+            $("#res").html("Result is " + result)
+        }
+
+        function sub(){
+            var num1 =$("#num1").val()
+            var num2 =$("#num2").val()
+            var result=Number(num1) - Number(num2)
+            $("#res").html("Result is " +result)
+        }
+
+        function mul(){
+
+            var num1 =$("#num1").val()
+            var num2 =$("#num2").val()
+            var result=Number(num1) / Number(num2)
+            $("#res").html("Result is " +result)
+        }
+
+        function div(){
+            var num1 =$("#num1").val()
+            var num2 =$("#num2").val()
+            var result=Number(num1) * Number(num2)
+            $("#res").html("Result is " +result)
+        }
+
+        function mod(){
+            var num1 =$("#num1").val()
+            var num2 =$("#num2").val()
+            var result=Number(num1) % Number(num2)
+            $("#res").html("Result is " +result)
+        }
+
+
+    </script>
+</head>
+<body>
+    <div class="card" >
+        <h1> Calculator : </h1> <br>
+        <span>Enter 1st Number : </span> 
+        <input type="text" id="num1">
+        <br><br>
+        <span>Enter 2nd Number :</span> 
+        <input type="text" id="num2"> 
+        <br><br>
+        <button onclick="add()"> + </button>
+        <button onclick="sub()"> - </button>
+        <button onclick="mul()"> ×</button>
+        <button onclick="div()"> ÷ </button>
+        <button onclick="mod()"> % </button> <br><br>
+        <span id="res"></span>
+    </div>
+</body>
+</html>

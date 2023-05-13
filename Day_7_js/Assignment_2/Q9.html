@@ -1,0 +1,23 @@
+<html>
+    <head>
+        <title> </title>
+    </head>
+    <script>
+
+        var numFruit=prompt("Enter the number of fruit in array :")
+        var fruits =[];
+        var htmlStr = "<ol>";
+
+            for(var i=0;i<numFruit;i++){
+                var fruit=prompt("Enter " + numFruit + " fruit names");
+                fruits.push(fruit);
+                htmlStr = htmlStr + "<li>" + fruits[i] +"</li>";
+            }
+
+        htmlStr = htmlStr +"</ol>"
+        document.write(htmlStr);
+    </script>
+    <body>
+
+    </body>
+</html>

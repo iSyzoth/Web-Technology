@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Calcumator</title>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js" integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script>
+        <!-- Syntex of jquery // $(css_selector).function(argument) -->
+    <script>
+            // using Jquery instead of traidtional method
+
+        function add(){
+            //var num1 = document.getElementById("num1").value
+            // here we are using #num1 because we are getting the element by it's ID and in CSS we use # as ID
+            var num1 = $("#num1").val()                           // jquery way to write the above line
+
+            // var num2 = document.getElementById("num2").value
+            var num2 =$("#num2").val()
+
+            var result = Number(num1) +Number (num2)
+
+            //document.getElementById("res").innerHTML="Result is " + result
+            $("#res").html("Result is " + result)                   // how to write the above code in jquery
+            
+        }
+        // Replacement of onclick="add()" in button tag 
+
+        // $("#add-btn").click(add) but this line need to be put after button since the button tag's DOM is created at this point
+        // DOMContentLoaded skeleton:
+        // $(document).ready(function(){
+        //     skeleton
+        // })
+        $(document).ready(function(){
+            $("#add-btn").click(add)
+        })
+    </script>
+</head>
+<body>
+    Enter number 1<input type="text" id="num1">
+    <br>
+    Enter number 2<input type="text" id="num2">
+    <br>
+    <button id="add-btn" > + </button> <br>
+    <!-- <script>
+        $("#add-btn").click(add)
+    </script> -->
+    <span id="res"></span>
+</body>
+</html>

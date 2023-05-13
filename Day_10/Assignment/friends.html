@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>friend_list</title>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js" integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script>
+    <script>
+        
+        function showFriendList(){
+            //var names=prompt("Enter the names of your friends")
+            var names=$("show").val()
+            
+            var name=names.split(",");
+
+            var htmlStr="<ol>";
+                for(var i=0;i<name.length;i++){
+                    htmlStr = htmlStr + "<li>" +name[i]+"</li>";
+                }
+            htmlStr=htmlStr+"</ol>";
+            //document.write(htmlStr);
+            $("#list").write(htmlStr)
+        }
+        showFriendList()
+    </script>
+</head>
+<body>
+    Enter friend's name : <input type="text" id="friend">
+    <br>
+    <button id="show" onclick="showFriendList()"> Show</button>
+    <div id="list"></div>
+</body>
+</html>

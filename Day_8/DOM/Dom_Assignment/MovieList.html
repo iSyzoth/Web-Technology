@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Q5</title>
+    <script>
+        //Create a web page and take 3 Movies details from prompt and show in table
+        //Movies property : Movie Name,Price,Seat
+
+    var movie=[]
+    function movie_input(){
+        var n=document.getElementById("name").value
+        var p=document.getElementById("price").value
+        var s=document.getElementById("seat").value
+        var temp={
+            name:n,
+            price:p,
+            seat:s
+        }
+        movie.push(temp)
+    }
+
+    function display_details(){
+    var htmlStr="<table border=1>"
+        for(var i=0;i<movie.length;i++){
+            htmlStr=htmlStr+"<tr><td>"+movie[i].name+"</td><td>"+movie[i].price+"</td><td>"+movie[i].seat+"</td></tr>";
+        }
+        htmlStr=htmlStr+"</table>"
+        document.getElementById("data").innerHTML=htmlStr
+    }
+
+    </script>
+</head>
+<body>
+    Enter Movie Name : <input type="text" id="name"><br>
+    Enter Movie Price : <input type="text" id="price"><br>
+    Enter No. of seats : <input type="text" id="seat"><br>
+    <button onclick="movie_input()">Save</button>
+    <button onclick="display_details()">Show</button>
+    <div id="data"></div>
+</body>
+</html>

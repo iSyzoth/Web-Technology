@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+    <script>
+
+    //   var std=[
+    //     {name: "Siddhant", age: 12, salary:3000},   // 0 index
+    //     {name: "Anubhav", age: 13, salary:4000},    // 1 index
+    //     {name: "Rajat", age: 14, salary:5000},      // 2 index
+    //     ]
+
+    var std=[]
+
+    function user_input(){
+        var n=prompt("enter name")
+        var a=prompt("enter age")
+        var s=prompt("enter salary")
+        var temp={
+            name:n,
+            age:a,
+            salary:s
+        }
+        std.push(temp)
+    }
+        for(var i=0;i<3;i++){
+            user_input()
+        }
+
+    
+    function display_data(){
+        var htmlStr="<table border=1" 
+
+        for(var i=0;i<std.length; i++){
+        htmlStr=htmlStr+"<tr><td>"+std[i].name+"</td><td>"+std[i].age+"</td><td>"+std[i].salary+"</td><tr>";
+    }
+    htmlStr=htmlStr+"</table>"
+    document.write(htmlStr)
+    }
+    display_data()
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

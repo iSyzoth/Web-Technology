@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+    <script>
+        var emp=[]
+
+        function save(){
+            var name=document.getElementById("name").value
+            var email=document.getElementById("email").value
+            var dob=document.getElementById("dob").value
+            emp.push({
+                name :name,
+                email:email,
+                dob:dob
+            })
+        }
+
+        function display(){
+            var htmlStr = ""
+            for(var i=0;i<emp.length;i++){
+            //    htmlStr=htmlStr +"<tr><td>"+ emp[i].name + "</td><td>" +emp[i].email + "</td><td>" + emp[i].dob+ "</td></r>"
+            // This is being generated when we write the above write
+            // <tr><td>Siddhant</td><td>sid@gmail.com</td><td>2/3/222</td></tr>
+
+            
+            //Another way to write the above code.
+            // ${ write property here } is used in this
+            htmlStr=htmlStr + `<tr>
+                                <td>${emp[i].name}</td>
+                                <td>${emp[i].email}</td>
+                                <td>${emp[i].dob}</td>
+                                </tr>`
+                                    
+
+            }
+            
+            document.getElementById("table-body").innerHTML=htmlStr
+        }   
+    </script>
+</head>
+<body>
+    Enter Name : <input type="text" id="name"><br>
+    Enter Email : <input type="email" id="email"><br>
+    Enter DOB : <input type="date" id="dob"><br>
+    <button onclick="save()">Save</button>
+    <button onclick="display()">Show</button>
+    <table border="1">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Email</th>
+                <th>Date of birth</th>
+            </tr>
+        </thead>
+        <tbody id="table-body">
+
+        </tbody>
+    </table>
+</body>
+</html>

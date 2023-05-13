@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>RegEx</title>
+    <script>
+        // Pattern matching
+        /*
+
+        ^  ->  line starting with
+        $  ->  line ending with
+        .  ->  any character
+        *  ->  zero or more occurance
+        +  ->  one or more occurances
+        {} ->  exact occurance
+        |  ->  or
+        [] ->  range
+        () ->  grouping
+        \d ->  only digit allowed
+        \D ->  non digit chars
+
+
+        function:
+        match
+        matchAll
+        replace
+        replaceAll
+
+        */
+
+        // var str = "A computer is a machine that can be programmed to carry out"
+        // var str2 = "AbcccdoiwXYXY computer is a machine Atulxoxo that can be programmed to carry out"
+        // console.log(str.match(/machine/))
+        // console.log(str.match(/^A/))        // ^ & * are used before characters
+        // console.log(str.match(/^a/))       // case sensetive
+        // console.log(str2.match(/^Abc/))   
+        // console.log(str2.match(/^Abc+/))   // the + checks if there is c or not. 
+        // console.log(str2.match(/^Abc*/))  
+        // console.log(str2.match(/^Abc{3}/))  // c is there 4 times so it is within limt
+        // console.log(str2.match(/^Abc{5}/))  // c is not 5 times so null
+        // console.log(str2.match(/^Abcc.d/))   // . is denoted as c so (Abcccd)
+        // console.log(str2.match(/^Ab[b-xJ-X0-9]/))    //[a-zA-Z0-9] giving range 
+        // console.log(str2.match(/A.+[xo]{2}/))    // In a string that start with Ab, has XY twice 
+
+        var code = "MH10AA2347"
+        var phone ="123456789"
+        var name ="Hello"
+        var email ="sid@cdac.com"
+        console.log(code.match(/^MH.*/))
+        console.log(phone.match(/\d/))
+        console.log(name.match(/\D/))
+        //console.log(email.match(/^[a-zA-Z][0-9a-zA-Z]*@cdac.com$/))
+        console.log(email.match(/^[a-zA-Z][0-9a-zA-Z]*@(cdac.com|cdac.in)$/))
+        //replace
+        console.log(code.replace(/[MH10]/,"BR01"))
+        
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

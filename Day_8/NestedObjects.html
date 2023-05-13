@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Nested Objects</title>
+    <script>
+
+        //Note : {} is used to create an object
+
+        var std={              //(std is an object)
+            name:"Siddhant", 
+            age:"46", 
+            contact: {          //nested  (contact is also an object)
+                phone:"734485848",
+                email: "sid@gmail.com",
+                address:{      //nested inside nested      (address is also an object)
+                    state:"MH",
+                    city: "Pune",
+                    floor:3
+                }
+            },  //using, to continue after contanct, outside of nested
+            hobbies:["Reading","Traveling","Cooking"]       // to store multiple values, arrays are better to use [] are arrays
+        }
+
+        //access properties
+        std.contact.address.floor=4             //multiple ways to access and modify objects
+        // std["contact"]["address"]["floor"]=4    
+        // std["contact"].address["floor"]=4
+        std["contact"]["address"]["city"]="Mumbai"
+
+        console.log(std["contact"]["address"].city)
+        console.log(std["contact"]["address"].floor)
+        console.log(std.hobbies[2])
+        std.hobbies.push("Singing");
+        console.log(std.hobbies)
+        
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

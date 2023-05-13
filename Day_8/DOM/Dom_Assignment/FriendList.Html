@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Q6</title>
+    <script>
+        //Write a code to accept name of Friends name from user and show in list
+        // using function
+
+        var friends=[]
+        function friend_List(){
+            var names=document.getElementById("names").value
+            var name=names.split(",");
+            friends.push(name)
+        }
+        
+
+        function display_friends(){
+            var htmlStr="<ol>";
+                for(var i=0;i<friends.length;i++){
+                    htmlStr = htmlStr + "<li>" +friends[i]+"</li>";
+                }
+            htmlStr=htmlStr+"</ol>";
+            document.getElementById("display").innerHTML=htmlStr          
+        }
+    </script>
+    
+</head>
+<body>
+    Enter your friend's names : <input type="text" id="names"><br>
+    <button onclick="friend_List()"> Save </button>
+    <button onclick="display_friends()"> Show </button>
+    <div id="display"></div>
+</body>
+</html>

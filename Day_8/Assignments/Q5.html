@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Q5</title>
+    <script>
+        //Create a web page and take 3 Movies details from prompt and show in table
+        //Movies property : Movie Name,Price,Seat
+
+    var Movie=[]
+    for(var i=0;i<3;i++){
+        var n=prompt("Name of movie")
+        var p=prompt("Price of movie")
+        var s=prompt("No. of seats")
+        var temp={
+            name:n,
+            price:p,
+            seat:s
+        }
+        Movie.push(temp)
+    }
+
+    var htmlStr="<table border=1>"
+        for(var i=0;i<Movie.length;i++){
+            htmlStr=htmlStr+"<tr><td>"+Movie[i].name+"</td><td>"+Movie[i].price+"</td><td>"+Movie[i].seat+"</td></tr>";
+        }
+        htmlStr=htmlStr+"</table>"
+        document.write(htmlStr)
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

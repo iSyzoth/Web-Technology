@@ -1,0 +1,28 @@
+<html>
+    <head>
+        <title> Strings </title>
+        <script>
+            var name = "Atul";
+            //          0123
+            console.log("length of string", name.length);   // length of the string
+
+            // Access each index
+            console.log(name[0]);
+            console.log(name[3]);
+            console.log(name[10]);  // undefined
+            name[10] = 'o'          // even if you assign a character to an index the string don't change
+            console.log(name);     
+
+            // String functions
+            console.log("Uppercase",name.toUpperCase());
+            console.log("Lowercase",name.toLowerCase())
+            console.log(name.startsWith("A"));
+            console.log(name.startsWith("S"));
+            console.log(name.endsWith("l"));
+            console.log(name.charAt(3));            // which character is at that specific index
+            console.log(name.includes("tu"));
+            console.log(name.indexOf("tu"));        // first occurance of the index
+            console.log(name.lastIndexOf("ul"));    // last occurance of the index
+        </script>
+    </head>
+</html>

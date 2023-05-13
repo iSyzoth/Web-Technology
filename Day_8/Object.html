@@ -1,0 +1,62 @@
+<html>
+    <head>
+        <title>Object</title>
+    </head>
+    <script>
+        //objects
+
+        var obj ={}                 //empty object
+
+        var car1={
+            modelNo:"A10",          //property name and their values.
+            brand:"TATA",           // ex :  modelNO : "A10"
+            engineNo:"6784234",     // property_name : values
+            chasisNo:"7639872"
+        }
+
+        var car2={
+            modelNo:"T25",
+            brand:"Toyota",
+            engineNo:"7845846",
+            chasisNo:"1574575"
+        }
+
+        var std1={
+            name:"Siddhant",
+            prn:"7485484923",
+            state:"MH",
+            phone:"4858484882"
+        }
+
+        var std2={
+            name:"Anubhav",
+            prn:"8457845678",
+            state:"UP",
+            email:"abs@gmailcom"
+        }
+
+        //access objects
+        console.log(std2)
+        console.log(car1)
+        //access each property
+        console.log(std1.name)
+        console.log(std2.email)
+        console.log(std1["name"]) //subscript operator
+        std1["name"] = "Siddhant verma" //updating values
+        std1.phone="8484858482" //updating using . operator
+        console.log(std1)
+
+        //Add new property to object
+        std1.email ="sid@gmail.com"  // if exist, it will override. If not, it'll add the new property in object
+        console.log(std1)
+
+        //Remove property from object
+        delete std1.state   //delete the property
+        console.log(std1)
+
+        
+    </script>
+    <body>
+
+    </body>
+</html>

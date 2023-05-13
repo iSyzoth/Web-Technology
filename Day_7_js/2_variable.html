@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+
+        // Variables 
+        var num1 = 20;       // no need to mention any datatype but should be used for good programming practice
+                             // always try to initialize if you can.
+        var num2 = 22;
+        
+        var num3;             // variable without value contains "undefined" value
+        console.log(num3);    
+
+        console.log(num1+num2); // addition
+
+        name = "Addition";      // string
+        console.log(name);      
+
+        console.log(name + " = " + (num1+num2));    // concatination, doesn't matter if there are string and var together
+
+        var first_name="Atul";      
+        var last_name="Raj";
+
+        console.log(first_name + " " + last_name);      // Concatination ( to merge variables)
+
+
+        // Comparision operators...
+
+        console.log(2**3);      // 2 to the power of 3 (i.e : (2×2)×2 = 8)
+
+        console.log(2==2);      // compares the value
+        console.log(2=='2');    // value is same even though first one is var and other is char.
+        console.log(2==3);      // false
+
+        console.log(2===2);     // compare the identify means value and datatype
+        console.log(2==='2');   // value is same but datatype is different so false
+        console.log(2===3);     // false
+
+        // Typecasting 
+
+        var a = '10';
+        var b = '20';
+        var c = a+b;    // '10'+'20' = 1020     
+        var c = parseInt(a) + parseInt(b);  //Typecasting
+        console.log(c);
+        var d ='231.23';                 // string
+        c = c+ parseFloat(d);           // typecasting string to float and adding to the int.
+        console.log(c);                 // printing the value in float
+        console.log(c.toString());      // convrting float to string
+        c=Number(a) + Number(b);       // converting string to number and then addition
+        console.log(c);                // adding the sum
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

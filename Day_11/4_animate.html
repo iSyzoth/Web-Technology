@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js" integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script>
+    <style>
+    
+        img{
+            width:100px;
+            height:100px;
+        }
+    </style>
+    <title>Document</title>
+</head>
+<body>
+    
+    <div class="image">
+        <img src="online-library.png">
+    </div>
+    
+    <br>
+    <!-- <button id="animate-btn">Animate</button> -->
+    <script>
+        // $("#animate-btn").click(function(){
+        //     $(".block").animate({height: "+=100", width: "+="}, 5000, "swing",function(){
+        //         $(".block").animate({height:"100px", width:"100px"}, 5000,)
+        //     })
+        // })
+        
+        $(".image").mouseover(function(){
+            $(".image").animate({"padding-left":"90vw"},5000)
+        })
+
+        $(".image").mouseover(function(){
+            $(".image").animate({"padding-top":"80vh"},3000)
+        })
+
+        $(".image").mouseover(function(){
+            $(".image").animate({"padding-left":"0vw"},3000)
+        })
+
+        $(".image").mouseover(function(){
+            $(".image").animate({"padding-top":"0vh"},3000)
+        })
+        
+    </script>
+</body>
+</html>

@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+    <script>
+        //empty array of emp which will be assigned a value later from line 30
+        var emp=[]
+
+        function save(){
+
+            //name,email,dob textbox
+            var name=document.getElementById("name").value
+            var email=document.getElementById("email").value
+            var dob=document.getElementById("dob").value
+
+            //radio button
+            var gender_dom_arr=document.getElementsByName('gender') // Array : [ {}{}{} ]
+            var gender=""
+            if (gender_dom_arr[0].checked){
+                gender=gender_dom_arr[0].value
+            }
+            else if (gender_dom_arr[1].checked){
+                gender=gender_dom_arr[1].value
+            }
+            else if (gender_dom_arr[2].checked){
+                gender=gender_dom_arr[2].value
+            }
+
+            //
+            var lang_dom_arr=document.getElementsByName("lang")
+            var lang = []   // empty array  
+
+            // using if ladder cause in checkbox multiple values can be true
+            if(lang_dom_arr[0].checked){
+                lang.push(lang_dom_arr[0].value)
+            }
+            if(lang_dom_arr[1].checked){
+                lang.push(lang_dom_arr[1].value)
+            }
+            if(lang_dom_arr[2].checked){
+                lang.push(lang_dom_arr[2].value)
+            }
+            if(lang_dom_arr[3].checked){
+                lang.push(lang_dom_arr[3].value)
+            }
+
+            //object
+            emp.push({      
+                name :name,
+                email:email,
+                dob:dob,
+                gender: gender,
+                lang:lang
+            })
+        }
+
+        function display(){
+            // htmlStr has no value assigned, so we can assign it a value later which we did in line 45
+            var htmlStr = ""
+
+            // for loop is being used to check the lenght of emp object
+            for(var i=0;i<emp.length;i++){
+            //    htmlStr=htmlStr +"<tr><td>"+ emp[i].name + "</td><td>" +emp[i].email + "</td><td>" + emp[i].dob+ "</td></r>"
+                            // " or "
+            //Another way to write the above code.
+            // ${ write property here } is used in this
+            htmlStr=htmlStr + `<tr>
+                                <td>${emp[i].name}</td>
+                                <td>${emp[i].email}</td>
+                                <td>${emp[i].dob}</td>
+                                <td>${emp[i].gender}</td>
+                                <td>${emp[i].lang}</td>
+                                </tr>`
+                                    
+
+            }
+            // This is being generated when we write the above write
+            // <tr><td>Siddhant</td><td>sid@gmail.com</td><td>2/3/222</td></tr>
+            document.getElementById("table-body").innerHTML=htmlStr
+        }   
+    </script>
+</head>
+<body>
+    Enter Name : <input type="text" id="name"><br>
+    Enter Email : <input type="email" id="email"><br>
+    Enter DOB : <input type="date" id="dob"><br>
+
+    <!-- value button is compulsary in radio button in JS-->
+    Gender :    <input type="radio" id="radio" name="gender" value="male"> Male 
+                <input type="radio" id="radio" name="gender" value="female"> Female
+                <input type="radio" id="radio" name="gender" value="others"> Others
+    <br>
+    
+    <!-- checkbox -->
+    Language:   <input type="checkbox" name="lang" value="hindi">Hindi
+                <input type="checkbox" name="lang" value="marathi">Marathi
+                <input type="checkbox" name="lang" value="tamil">Tamil
+                <input type="checkbox" name="lang" value="telgu">Telgu
+    <br>
+    
+    <!--buttons -->
+    <button onclick="save()">Save</button>
+    <button onclick="display()">Show</button>
+    <table border="1">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Email</th>
+                <th>Date of birth</th>
+                <th>Gender</th>
+                <th>Language</th>
+            </tr>
+        </thead>
+        <tbody id="table-body">
+
+        </tbody>
+    </table>
+</body>
+</html>

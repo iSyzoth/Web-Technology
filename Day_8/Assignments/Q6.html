@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Q6</title>
+    <script>
+        //Write a code to accept name of Friends name from user and show in list
+        // using function
+
+        function showFriendList(){
+            var names=prompt("Enter the names of your friends")
+            var name=names.split(",");
+
+            var htmlStr="<ol>";
+                for(var i=0;i<name.length;i++){
+                    htmlStr = htmlStr + "<li>" +name[i]+"</li>";
+                }
+            htmlStr=htmlStr+"</ol>";
+            document.write(htmlStr);
+        }
+
+        showFriendList()
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

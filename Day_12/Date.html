@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Date Object</title>
+    <script>
+        var dt = new Date() // date object of current date
+        console.log(dt)
+        console.log(dt.getDay())    //Week Day
+        console.log(dt.getFullYear())
+        console.log(dt.getMonth())
+        console.log(dt.getDate())   //Date
+        console.log(dt.getTime())
+        console.log(dt.getHours())
+        console.log(dt.getMinutes())
+        console.log(dt.getSeconds())
+        console.log(dt.getMilliseconds())
+        dt.setDate(10)          // setting date
+        dt.setHours(15)         // setting hours
+        console.log(dt)
+        console.log(dt.toString())
+        console.log(dt.toLocaleString())        // auto adjust time to another timezone
+        console.log(dt.toISOString())
+        // year to millisecond
+        var new_dt=new Date(2024,4,30,14)
+        console.log(new_dt)
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

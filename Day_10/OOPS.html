@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+</head>
+<script>
+
+    // Structural Way (Used in C programming)
+    var s1={
+        name:"Siddhant",
+        prn:1,
+        marks:80,
+        getGrade: function(){
+          if(this.marks>80){
+                return "Pass"
+            }else{
+                return "Fail"
+            }
+        }
+    }
+    var s2={
+        name:"Adithya",
+        prn:2,
+        marks:70,
+        getGrade: function(){
+          if(this.marks>80){
+                return "Pass"
+            }else{
+                return "Fail"
+            }
+        }
+    }
+
+//-------------------------------------------------------------------------
+
+    // Object Oriented Way (Use this, since it uses OOPS)
+    // This is like a skeleton which can be used multiple times
+    function Student(){                 // constructor
+        this.name=""                    // data members
+        this.prn=""                     // this. is used to call variables inside the class/object
+        this.phone=""                   
+        this.marks=0
+        this.getGrade =function(){      // anonmyous function  is being used
+            if(this.marks>80){
+                return "F"
+            }else{
+                return "P"
+            }
+        }
+    }
+    // Creating the objects
+    var std1=new Student()
+    var std2=new Student()
+    var std3=new Student()
+    console.log(std1.name)           //std.variable name to call function outside 
+    std1.name="Siddhant"
+    std1["prn"]=1
+    std1.email="sid@gmail.com"
+    delete std1.marks
+    std1.marks=88
+    std1.getGrade()
+    console.log(std1)
+</script>
+<body>
+    
+</body>
+</html>
